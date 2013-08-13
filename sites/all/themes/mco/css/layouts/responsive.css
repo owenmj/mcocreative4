@@ -1,0 +1,146 @@
+/**
+ * @file
+ * Positioning for a responsive layout.
+ *
+ * Define CSS classes to create a fluid grid layout with optional sidebars
+ * depending on whether blocks are placed in the left or right sidebars.
+ *
+ * This layout uses the Zen Grids plugin for Compass: http://zengrids.com
+ */
+/* Import specific files for standalone compilation */
+/**
+* Default device is mobile with 1 column.
+* No sidebar second to be displayed 
+*/
+/**
+ * Center the page.
+ *
+ * For screen sizes larger than 1200px, prevent excessively long lines of text
+ * by setting a max-width.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/martinowen\/Sites\/mcocreative4\/master\/sites\/all\/themes\/mco\/sass\/layouts\/responsive\.scss}line{font-family:\0000345}}
+#page,
+.region-bottom {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+}
+
+/* Apply the shared properties of grid items in a single, efficient ruleset. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/martinowen\/Sites\/mcocreative4\/master\/sites\/all\/themes\/mco\/sass\/layouts\/responsive\.scss}line{font-family:\0000357}}
+#header,
+#content,
+#navigation,
+.region-sidebar-first,
+.region-sidebar-second,
+#footer {
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+/* Containers for grid items and flow items. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/martinowen\/Sites\/mcocreative4\/master\/sites\/all\/themes\/mco\/sass-extensions\/zen-grids\/stylesheets\/zen\/_grids\.scss}line{font-family:\0000346}}
+#header:before, #header:after,
+#main:before,
+#main:after,
+#footer:before,
+#footer:after {
+  content: "";
+  display: table;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/martinowen\/Sites\/mcocreative4\/master\/sites\/all\/themes\/mco\/sass-extensions\/zen-grids\/stylesheets\/zen\/_grids\.scss}line{font-family:\0000350}}
+#header:after,
+#main:after,
+#footer:after {
+  clear: both;
+}
+
+/* Navigation bar */
+@media all and (min-width: 480px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/martinowen\/Sites\/mcocreative4\/master\/sites\/all\/themes\/mco\/sass\/layouts\/responsive\.scss}line{font-family:\0000372}}
+  #main {
+    /* Move all the children of #main down to make room. */
+    padding-top: 3em;
+    position: relative;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/martinowen\/Sites\/mcocreative4\/master\/sites\/all\/themes\/mco\/sass\/layouts\/responsive\.scss}line{font-family:\0000377}}
+  #navigation {
+    /* Move the navbar up inside #main's padding. */
+    position: absolute;
+    top: 0;
+    height: 3em;
+    width: 100%;
+  }
+}
+/**
+* No sidebar second on home page to be displayed 
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/martinowen\/Sites\/mcocreative4\/master\/sites\/all\/themes\/mco\/sass\/layouts\/responsive\.scss}line{font-family:\0000391}}
+.node-page-41 .sidebar-second .region-sidebar-second {
+  display: none;
+}
+
+/**
+ * Use 12 grid columns for all other devices.
+ */
+@media all and (min-width: 480px) {
+ /**
+* The home page layout when there is only one sidebar, the right one.
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/martinowen\/Sites\/mcocreative4\/master\/sites\/all\/themes\/mco\/sass\/layouts\/responsive\.scss}line{font-family:\00003108}}
+  .sidebar-second {
+    /* Span 5 columns, starting in 1st column from left. */
+    /* Span 7 columns, starting in 4th column from left. */
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/martinowen\/Sites\/mcocreative4\/master\/sites\/all\/themes\/mco\/sass\/layouts\/responsive\.scss}line{font-family:\00003110}}
+  .sidebar-second #content {
+    float: left;
+    width: 41.66667%;
+    margin-left: 0%;
+    margin-right: -41.66667%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/martinowen\/Sites\/mcocreative4\/master\/sites\/all\/themes\/mco\/sass\/layouts\/responsive\.scss}line{font-family:\00003115}}
+  .sidebar-second .region-sidebar-second {
+    float: left;
+    width: 58.33333%;
+    margin-left: 41.66667%;
+    margin-right: -100%;
+  }
+
+  /**
+   * The inner page layout when there are two sidebars.
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/martinowen\/Sites\/mcocreative4\/master\/sites\/all\/themes\/mco\/sass\/layouts\/responsive\.scss}line{font-family:\00003123}}
+  .two-sidebars {
+    /* Span 5 columns, starting in 5th column from left. */
+    /* Span 4 columns, starting in 1st column from left. */
+    /* Span 3 columns, starting in 10th column from left.  */
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/martinowen\/Sites\/mcocreative4\/master\/sites\/all\/themes\/mco\/sass\/layouts\/responsive\.scss}line{font-family:\00003125}}
+  .two-sidebars #content {
+    float: left;
+    width: 41.66667%;
+    margin-left: 33.33333%;
+    margin-right: -75%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/martinowen\/Sites\/mcocreative4\/master\/sites\/all\/themes\/mco\/sass\/layouts\/responsive\.scss}line{font-family:\00003130}}
+  .two-sidebars .region-sidebar-first {
+    float: left;
+    width: 33.33333%;
+    margin-left: 0%;
+    margin-right: -33.33333%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/martinowen\/Sites\/mcocreative4\/master\/sites\/all\/themes\/mco\/sass\/layouts\/responsive\.scss}line{font-family:\00003135}}
+  .two-sidebars .region-sidebar-second {
+    float: left;
+    width: 25%;
+    margin-left: 75%;
+    margin-right: -100%;
+  }
+}

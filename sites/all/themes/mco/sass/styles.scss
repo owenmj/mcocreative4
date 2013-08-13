@@ -1,0 +1,339 @@
+/**
+ * @file
+ * Styles are organized using the SMACSS technique. @see http://smacss.com/book/
+ *
+ * When you turn on CSS aggregation at admin/config/development/performance, all
+ * of these @include files will be combined into a single file.
+ */
+
+/* Import Sass mixins, variables, Compass modules, etc. */
+@import "init";
+
+/* HTML element (SMACSS base) rules */
+@import "normalize";
+
+/* Layout rules */
+@import "layouts/responsive";
+
+@mixin calc($property, $expression) { 
+  #{$property}: -moz-calc(#{$expression}); 
+  #{$property}: -o-calc(#{$expression}); 
+  #{$property}: -webkit-calc(#{$expression}); 
+  #{$property}: calc(#{$expression}); 
+}
+
+/* Component (SMACSS module) rules */
+@import "components/misc";
+// Optionally, add your own components here.
+@import "print";
+
+/* SMACSS theme rules */
+/* @import "theme-A"; */
+/* @import "theme-B"; */
+
+/* remove these to check if any effect */
+
+#header{
+   @include zen-grid-item(12,1);
+}
+
+#highlighted{
+   @include zen-grid-item(12,1);
+   display:none;
+}
+
+#navigation{
+   @include zen-grid-item(12,1);
+}
+
+#footer{
+   @include zen-grid-item(12,1);
+}
+
+/* Base image and text blocks for header */
+
+.mcocreative-logo{
+   float:left;
+   margin-left: 5px;
+   margin-top: 3px;
+   width: percentage(255/940);
+   min-width: 150px;
+}
+
+.call-cta {
+     float:left;
+	 display:block;
+	 width: percentage(210/960);
+	 height: 60px;
+	 margin-left: percentage(230/940);
+	 margin-top: 3px;
+	 padding:5px;
+	 background-color: #ff4500; 
+     color:#fff;
+     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+     font-weight:bold;
+	 font-size: (15 / 16) * 1em;
+	 @include border-radius(15px);
+     text-align:left;
+	 position:relative; 
+}
+
+.call-cta p{
+    height:60px;
+	position: absolute;
+	top: 50%;
+    margin-top:-30px;
+	margin-left: 5px;
+}
+
+.contact-box {
+    margin-top: 3px;
+	width: percentage(220/960);
+    height:55px;
+    background-color: #fff;
+    float:right;
+}
+
+.contact-box img{
+   margin-bottom: 5px;;
+}
+
+.contact-box p{
+   font-family: "Trebuchet MS",Helvetica,sans-serif;
+   font-size: 0.7em;
+   padding-left:percentage(10/210);
+    margin-bottom: 0px;
+    line-height:0.5;
+}
+
+.contact-box .content a{
+    color: #000;
+}
+
+/* Base image and text blocks for footer */
+
+.ibd-logo{
+      margin-top: 10px;
+      float:left;
+	  width: percentage(100/940);
+ }
+
+.company-details{
+   margin-top:10px;
+   margin-left:percentage(400/940);
+   width: percentage(255/940);
+   float:left;
+}
+.company-details p{
+	margin-bottom: 3px;;
+	font-size: 10px;
+	text-align:center;
+}
+
+.footer-user-menu{
+   float:right;
+}
+
+/* Define styling for specific devices */
+
+.page-node-41 h1#page-title{
+    display:none;
+}
+	
+/* Mobiles */
+@media all and (max-width: 479px) {
+	.call-cta{
+	 display:none;
+	}
+}
+
+@media all and (min-width:480px){
+ $viewport-width: 100vw;
+ @debug $viewport-width;
+ $device-height:100vh;
+ $content-height: $device-height - 15;
+ @debug $device-height;
+ 
+ $aspect-ratio: width/height;
+ @debug $aspect-ratio;
+
+ #zone-content{
+    height: 100;
+}
+
+ .page-node-41 .home-intro p {
+	margin-top: percentage(30/700);
+}
+
+.region-sidebar-second .website-design a{
+    width: percentage(140/960);
+	 position:absolute;
+	background-repeat:no-repeat;
+	$sidebar-first: (5/12)*$viewport-width;
+	 @debug $sidebar-first;
+	 $sidebar-second: (100/960)*$viewport-width;
+	  @debug $sidebar-second;
+	
+    $x-website-design : $sidebar-first + $sidebar-second;
+	@debug $x-website-design;
+    $y-website-design : (115+84)/700*$content-height;
+	@debug $y-website-design;
+
+     $left: $x-website-design;
+	 @debug $left;
+	 left:$left;
+	 
+	 top: $y-website-design;
+   
+}
+
+.region-sidebar-second .website-development a{
+    width: percentage(140/960);
+	 position:absolute;
+	background-repeat:no-repeat;
+	$sidebar-first: (5/12)*$viewport-width;
+	 @debug $sidebar-first;
+	 $sidebar-second: (300/960)*$viewport-width;
+	  @debug $sidebar-second;
+	
+    $x-website-development : $sidebar-first + $sidebar-second;
+	@debug $x-website-development;
+    $y-website-development : (65+84)/700*$content-height;
+    @debug $y-website-development;
+
+    left: $x-website-development;
+    top: $y-website-development;
+
+}
+
+.region-sidebar-second .online-marketing a{
+    width: percentage(140/960);
+	@debug width;
+	 position:absolute;
+	 $sidebar-first: (5/12)*$viewport-width;
+	 @debug $sidebar-first;
+	 $sidebar-second: (38/960)*$viewport-width;
+	  @debug $sidebar-second;
+	$x-online-marketing : $sidebar-first + $sidebar-second;
+	@debug $x-online-marketing;
+    $y-online-marketing : (336+84)/700*$content-height;
+    @debug $y-online-marketing;
+
+    left: $x-online-marketing;
+    top: $y-online-marketing;
+
+}
+
+.region-sidebar-second .print-design a{
+    width: percentage(140/960);
+	 position:absolute;
+	$sidebar-first: (5/12)*$viewport-width;
+	 @debug $sidebar-first;
+	 $sidebar-second: (357/960)*$viewport-width;
+	  @debug $sidebar-second;
+	$x-print-design : $sidebar-first + $sidebar-second;
+	@debug $x-print-design;
+    $y-print-design : (266+84)/700*$content-height;
+    @debug $y-print-design;
+
+    left: $x-print-design;
+    top: $y-print-design;
+
+}
+
+.region-sidebar-second .contact-us a{
+    width: percentage(140/960);
+	 position:absolute;
+	$sidebar-first: (5/12)*$viewport-width;
+	 @debug $sidebar-first;
+	 $sidebar-second: (200/960)*$viewport-width;
+	  @debug $sidebar-second;
+	$x-contact-us :$sidebar-first + $sidebar-second;
+	@debug $x-contact-us;
+    $y-contact-us : (432+84)/700*$content-height;
+    @debug $y-contact-us;
+
+    left: $x-contact-us;
+    top: $y-contact-us;
+
+}
+
+
+.page-node-44 .website-design,
+.page-node-45 .website-development,
+.page-node-46 .online-marketing
+.page-node-47 .print-design,
+.page-node-5 .contact-us {
+    display:block;
+	width: percentage(200/960);
+	height:percentage(200/700);
+}
+
+.page-node-44 .website-design a{
+    width: percentage(200/960);
+	height:percentage(200/700);
+	position:absolute;
+	background-repeat:no-repeat;
+    top: percentage(115/700);
+    left:percentage(101/960);
+}
+
+.page-node-45 .website-development a{
+    width: percentage(200/960);
+	height:percentage(200/700);
+	position:absolute;
+	background-repeat:no-repeat;
+    top:percentage(65/700);
+    left: percentage(300/960);
+}
+
+.page-node-46 .online-marketing a{
+    width: percentage(200/960);
+	height:percentage(200/700);
+	position:absolute;
+	top: percentage(336/700);
+    left: percentage(38/960);
+}
+
+.page-node-47 .print-design a{
+    width: percentage(200/960);
+	height:percentage(200/700);
+	position:absolute;
+	top: percentage(266/700);
+    left: percentage(357/960);
+}
+
+.page-node-5 .contact-us{
+    display:block;
+	width: percentage(200/960);
+	height:percentage(200/700);
+	position:absolute;
+	top: percentage(432/700);
+    left: percentage(200/960);
+}
+
+/* Website design */
+
+.page-node-44 #zone-content{
+    height:percentage(300/700);
+}
+
+/* Website development */
+.page-node-45 #zone-content{
+    height:3percentage(300/700);
+}
+
+
+/* Online marketing */
+.page-node-46 #zone-content{
+    height:percentage(300/700);
+}
+
+
+/* Print design */
+.page-node-47 #zone-content{
+    height:percentage(300/700);
+}
+ 
+ }
+ 

@@ -1,0 +1,140 @@
+/**
+ * @file
+ * Positioning for a responsive layout.
+ *
+ * Define CSS classes to create a fluid grid layout with optional sidebars
+ * depending on whether blocks are placed in the left or right sidebars.
+ *
+ * This layout uses the Zen Grids plugin for Compass: http://zengrids.com
+ */
+
+// We are going to create a fluid grid with 1, 3, or 5 columns and 20px gutters
+// between columns (applied as 10px of left/right padding on each column).
+
+/* Import specific files for standalone compilation */
+@import "zen";
+@import "init";
+/**
+* Default device is mobile with 1 column.
+* No sidebar second to be displayed 
+*/
+
+$zen-column-count:  1;
+$zen-gutter-width:  20px;
+
+// If you need IE6/7 support for box-sizing: border-box (default), see _base.scss
+//$zen-box-sizing: content-box;
+
+// You can generate more efficient CSS if you manually apply the
+// zen-grid-item-base mixin to all grid items from within a single ruleset.
+$zen-auto-include-item-base: false;
+// $zen-auto-include-flow-item-base: false;
+
+// Suppress this section of CSS for RTL layouts since it contains no LTR-specific styles.
+@if $zen-reverse-all-floats == false {
+
+/**
+ * Center the page.
+ *
+ * For screen sizes larger than 1200px, prevent excessively long lines of text
+ * by setting a max-width.
+ */
+
+
+#page,
+.region-bottom {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+}
+
+/* Apply the shared properties of grid items in a single, efficient ruleset. */
+#header,
+#content,
+#navigation,
+.region-sidebar-first,
+.region-sidebar-second,
+#footer {
+  // See the note about $zen-auto-include-item-base above.
+  @include zen-grid-item-base();
+   
+}
+
+/* Containers for grid items and flow items. */
+#header,
+#main,
+#footer {
+  @include zen-grid-container();
+}
+
+/* Navigation bar */
+@media all and (min-width: 480px) {
+  #main {
+    /* Move all the children of #main down to make room. */
+    padding-top: $nav-height;
+    position: relative;
+  }
+  #navigation {
+    /* Move the navbar up inside #main's padding. */
+    position: absolute;
+    top: 0;
+    height: $nav-height;
+    width: $zen-grid-width;
+  }
+}
+
+/**
+* No sidebar second on home page to be displayed 
+*/
+.node-page-41 .sidebar-second {
+    
+    .region-sidebar-second {
+       display:none;
+    }
+}
+
+} // End of @if $zen-reverse-all-floats == true
+
+/**
+ * Use 12 grid columns for all other devices.
+ */
+@media all and (min-width: 480px) {
+
+  $zen-column-count: 12;
+
+    /**
+   * The home page layout when there is only one sidebar, the right one.
+   */
+  .sidebar-second {
+    /* Span 5 columns, starting in 1st column from left. */
+    #content {
+      @include zen-grid-item(5, 1);
+    }
+
+    /* Span 7 columns, starting in 4th column from left. */
+    .region-sidebar-second {
+      @include zen-grid-item(7, 6);
+    }
+  }
+
+  /**
+   * The inner page layout when there are two sidebars.
+   */
+  .two-sidebars {
+    /* Span 5 columns, starting in 5th column from left. */
+    #content {
+      @include zen-grid-item(5, 5);
+    }
+
+    /* Span 4 columns, starting in 1st column from left. */
+    .region-sidebar-first {
+      @include zen-grid-item(4, 1);
+    }
+
+    /* Span 3 columns, starting in 10th column from left.  */
+    .region-sidebar-second {
+      @include zen-grid-item(3, 10);
+    }
+  }
+}
+
