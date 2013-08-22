@@ -5,5 +5,4 @@
 	});
     var temp = $('#header .region-header .contact-box');
     temp.hide();
-    alert('hello');
-})(jQuery)
+    })(jQuery)

@@ -58,6 +58,7 @@
    margin-top: 3px;
    width: percentage(255/940);
    min-width: 150px;
+   height:auto;
 }
 
 .call-cta {
@@ -116,6 +117,7 @@
       margin-top: 10px;
       float:left;
 	  width: percentage(100/940);
+	  height:auto;
  }
 
 .company-details{
@@ -142,23 +144,23 @@
 	
 /* Mobiles */
 @media all and (max-width: 479px) {
-	.call-cta{
+	.call-cta {
 	 display:none;
-	}
-}
+	 };
+	 .region-sidebar-second {
+	 display:none;
+	};
+};
 
-@media all and (min-width:480px){
+@media all and (min-width:480px) and (min-height: 300px) {
  $viewport-width: 100vw;
  @debug $viewport-width;
  $device-height:100vh;
- $content-height: $device-height - 15;
+ $content-height: $device-height;
  @debug $device-height;
  
- $aspect-ratio: width/height;
- @debug $aspect-ratio;
-
  #zone-content{
-    height: 100;
+    height: 100%;
 }
 
  .page-node-41 .home-intro p {
@@ -166,8 +168,9 @@
 }
 
 .region-sidebar-second .website-design a{
-    width: percentage(140/960);
-	 position:absolute;
+    max-width: percentage(140/960);
+	max-height: percentage(240/700);
+	position:absolute;
 	background-repeat:no-repeat;
 	$sidebar-first: (5/12)*$viewport-width;
 	 @debug $sidebar-first;
@@ -176,7 +179,7 @@
 	
     $x-website-design : $sidebar-first + $sidebar-second;
 	@debug $x-website-design;
-    $y-website-design : (115+84)/700*$content-height;
+    $y-website-design : (115 + 120)/700*$content-height;
 	@debug $y-website-design;
 
      $left: $x-website-design;
@@ -188,7 +191,8 @@
 }
 
 .region-sidebar-second .website-development a{
-    width: percentage(140/960);
+    max-width: percentage(140/960); 
+	height:auto;
 	 position:absolute;
 	background-repeat:no-repeat;
 	$sidebar-first: (5/12)*$viewport-width;
@@ -198,7 +202,7 @@
 	
     $x-website-development : $sidebar-first + $sidebar-second;
 	@debug $x-website-development;
-    $y-website-development : (65+84)/700*$content-height;
+    $y-website-development : (65 + 120)/700*$content-height;
     @debug $y-website-development;
 
     left: $x-website-development;
@@ -206,8 +210,9 @@
 
 }
 
-.region-sidebar-second .online-marketing a{
-    width: percentage(140/960);
+.region-sidebar-second .online-marketing a img{
+    max-width: percentage(140/960); 
+	height:auto;
 	@debug width;
 	 position:absolute;
 	 $sidebar-first: (5/12)*$viewport-width;
@@ -216,7 +221,7 @@
 	  @debug $sidebar-second;
 	$x-online-marketing : $sidebar-first + $sidebar-second;
 	@debug $x-online-marketing;
-    $y-online-marketing : (336+84)/700*$content-height;
+    $y-online-marketing : (336 + 120)/700*$content-height;
     @debug $y-online-marketing;
 
     left: $x-online-marketing;
@@ -225,7 +230,8 @@
 }
 
 .region-sidebar-second .print-design a{
-    width: percentage(140/960);
+    max-width: percentage(140/960); 
+	height:auto;
 	 position:absolute;
 	$sidebar-first: (5/12)*$viewport-width;
 	 @debug $sidebar-first;
@@ -233,7 +239,7 @@
 	  @debug $sidebar-second;
 	$x-print-design : $sidebar-first + $sidebar-second;
 	@debug $x-print-design;
-    $y-print-design : (266+84)/700*$content-height;
+    $y-print-design : (266 + 120)/700*$content-height;
     @debug $y-print-design;
 
     left: $x-print-design;
@@ -242,7 +248,8 @@
 }
 
 .region-sidebar-second .contact-us a{
-    width: percentage(140/960);
+    max-width: percentage(140/960); 
+	height:auto;
 	 position:absolute;
 	$sidebar-first: (5/12)*$viewport-width;
 	 @debug $sidebar-first;
@@ -250,7 +257,7 @@
 	  @debug $sidebar-second;
 	$x-contact-us :$sidebar-first + $sidebar-second;
 	@debug $x-contact-us;
-    $y-contact-us : (432+84)/700*$content-height;
+    $y-contact-us : (432 + 120)/700*$content-height;
     @debug $y-contact-us;
 
     left: $x-contact-us;

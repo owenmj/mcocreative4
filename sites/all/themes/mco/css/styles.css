@@ -1569,7 +1569,7 @@ tr.selected td {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/martinowen\/Sites\/mcocreative4\/master\/sites\/all\/themes\/mco\/sass\/components\/_misc\.scss}line{font-family:\00003803}}
 .progress .filled {
   background-color: #0072b9;
-  background-image: url('../images/progress.gif?1375282088');
+  background-image: url('../images/progress.gif?1376403086');
 }
 
 /**
@@ -1703,9 +1703,10 @@ tr.selected td {
   margin-top: 3px;
   width: 27.12766%;
   min-width: 150px;
+  height: auto;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/martinowen\/Sites\/mcocreative4\/master\/sites\/all\/themes\/mco\/sass\/styles\.scss}line{font-family:\0000363}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/martinowen\/Sites\/mcocreative4\/master\/sites\/all\/themes\/mco\/sass\/styles\.scss}line{font-family:\0000364}}
 .call-cta {
   float: left;
   display: block;
@@ -1728,7 +1729,7 @@ tr.selected td {
   position: relative;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/martinowen\/Sites\/mcocreative4\/master\/sites\/all\/themes\/mco\/sass\/styles\.scss}line{font-family:\0000381}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/martinowen\/Sites\/mcocreative4\/master\/sites\/all\/themes\/mco\/sass\/styles\.scss}line{font-family:\0000382}}
 .call-cta p {
   height: 60px;
   position: absolute;
@@ -1737,7 +1738,7 @@ tr.selected td {
   margin-left: 5px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/martinowen\/Sites\/mcocreative4\/master\/sites\/all\/themes\/mco\/sass\/styles\.scss}line{font-family:\0000389}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/martinowen\/Sites\/mcocreative4\/master\/sites\/all\/themes\/mco\/sass\/styles\.scss}line{font-family:\0000390}}
 .contact-box {
   margin-top: 3px;
   width: 22.91667%;
@@ -1746,12 +1747,12 @@ tr.selected td {
   float: right;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/martinowen\/Sites\/mcocreative4\/master\/sites\/all\/themes\/mco\/sass\/styles\.scss}line{font-family:\0000397}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/martinowen\/Sites\/mcocreative4\/master\/sites\/all\/themes\/mco\/sass\/styles\.scss}line{font-family:\0000398}}
 .contact-box img {
   margin-bottom: 5px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/martinowen\/Sites\/mcocreative4\/master\/sites\/all\/themes\/mco\/sass\/styles\.scss}line{font-family:\00003101}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/martinowen\/Sites\/mcocreative4\/master\/sites\/all\/themes\/mco\/sass\/styles\.scss}line{font-family:\00003102}}
 .contact-box p {
   font-family: "Trebuchet MS",Helvetica,sans-serif;
   font-size: 0.7em;
@@ -1760,20 +1761,21 @@ tr.selected td {
   line-height: 0.5;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/martinowen\/Sites\/mcocreative4\/master\/sites\/all\/themes\/mco\/sass\/styles\.scss}line{font-family:\00003109}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/martinowen\/Sites\/mcocreative4\/master\/sites\/all\/themes\/mco\/sass\/styles\.scss}line{font-family:\00003110}}
 .contact-box .content a {
   color: #000;
 }
 
 /* Base image and text blocks for footer */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/martinowen\/Sites\/mcocreative4\/master\/sites\/all\/themes\/mco\/sass\/styles\.scss}line{font-family:\00003115}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/martinowen\/Sites\/mcocreative4\/master\/sites\/all\/themes\/mco\/sass\/styles\.scss}line{font-family:\00003116}}
 .ibd-logo {
   margin-top: 10px;
   float: left;
   width: 10.6383%;
+  height: auto;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/martinowen\/Sites\/mcocreative4\/master\/sites\/all\/themes\/mco\/sass\/styles\.scss}line{font-family:\00003121}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/martinowen\/Sites\/mcocreative4\/master\/sites\/all\/themes\/mco\/sass\/styles\.scss}line{font-family:\00003123}}
 .company-details {
   margin-top: 10px;
   margin-left: 42.55319%;
@@ -1781,85 +1783,95 @@ tr.selected td {
   float: left;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/martinowen\/Sites\/mcocreative4\/master\/sites\/all\/themes\/mco\/sass\/styles\.scss}line{font-family:\00003127}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/martinowen\/Sites\/mcocreative4\/master\/sites\/all\/themes\/mco\/sass\/styles\.scss}line{font-family:\00003129}}
 .company-details p {
   margin-bottom: 3px;
   font-size: 10px;
   text-align: center;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/martinowen\/Sites\/mcocreative4\/master\/sites\/all\/themes\/mco\/sass\/styles\.scss}line{font-family:\00003133}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/martinowen\/Sites\/mcocreative4\/master\/sites\/all\/themes\/mco\/sass\/styles\.scss}line{font-family:\00003135}}
 .footer-user-menu {
   float: right;
 }
 
 /* Define styling for specific devices */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/martinowen\/Sites\/mcocreative4\/master\/sites\/all\/themes\/mco\/sass\/styles\.scss}line{font-family:\00003139}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/martinowen\/Sites\/mcocreative4\/master\/sites\/all\/themes\/mco\/sass\/styles\.scss}line{font-family:\00003141}}
 .page-node-41 h1#page-title {
   display: none;
 }
 
 /* Mobiles */
 @media all and (max-width: 479px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/martinowen\/Sites\/mcocreative4\/master\/sites\/all\/themes\/mco\/sass\/styles\.scss}line{font-family:\00003145}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/martinowen\/Sites\/mcocreative4\/master\/sites\/all\/themes\/mco\/sass\/styles\.scss}line{font-family:\00003147}}
   .call-cta {
     display: none;
   }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/martinowen\/Sites\/mcocreative4\/master\/sites\/all\/themes\/mco\/sass\/styles\.scss}line{font-family:\00003150}}
+  .region-sidebar-second {
+    display: none;
+  }
 }
-@media all and (min-width: 480px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/martinowen\/Sites\/mcocreative4\/master\/sites\/all\/themes\/mco\/sass\/styles\.scss}line{font-family:\00003160}}
+@media all and (min-width: 480px) and (min-height: 300px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/martinowen\/Sites\/mcocreative4\/master\/sites\/all\/themes\/mco\/sass\/styles\.scss}line{font-family:\00003162}}
   #zone-content {
-    height: 100;
+    height: 100%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/martinowen\/Sites\/mcocreative4\/master\/sites\/all\/themes\/mco\/sass\/styles\.scss}line{font-family:\00003164}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/martinowen\/Sites\/mcocreative4\/master\/sites\/all\/themes\/mco\/sass\/styles\.scss}line{font-family:\00003166}}
   .page-node-41 .home-intro p {
     margin-top: 4.28571%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/martinowen\/Sites\/mcocreative4\/master\/sites\/all\/themes\/mco\/sass\/styles\.scss}line{font-family:\00003168}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/martinowen\/Sites\/mcocreative4\/master\/sites\/all\/themes\/mco\/sass\/styles\.scss}line{font-family:\00003170}}
   .region-sidebar-second .website-design a {
-    width: 14.58333%;
+    max-width: 14.58333%;
+    max-height: 34.28571%;
     position: absolute;
     background-repeat: no-repeat;
     left: 52.08333vw;
-    top: 24.16429vh;
+    top: 33.57143vh;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/martinowen\/Sites\/mcocreative4\/master\/sites\/all\/themes\/mco\/sass\/styles\.scss}line{font-family:\00003190}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/martinowen\/Sites\/mcocreative4\/master\/sites\/all\/themes\/mco\/sass\/styles\.scss}line{font-family:\00003193}}
   .region-sidebar-second .website-development a {
-    width: 14.58333%;
+    max-width: 14.58333%;
+    height: auto;
     position: absolute;
     background-repeat: no-repeat;
     left: 72.91667vw;
-    top: 18.09286vh;
+    top: 26.42857vh;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/martinowen\/Sites\/mcocreative4\/master\/sites\/all\/themes\/mco\/sass\/styles\.scss}line{font-family:\00003209}}
-  .region-sidebar-second .online-marketing a {
-    width: 14.58333%;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/martinowen\/Sites\/mcocreative4\/master\/sites\/all\/themes\/mco\/sass\/styles\.scss}line{font-family:\00003213}}
+  .region-sidebar-second .online-marketing a img {
+    max-width: 14.58333%;
+    height: auto;
     position: absolute;
     left: 45.625vw;
-    top: 51vh;
+    top: 65.14286vh;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/martinowen\/Sites\/mcocreative4\/master\/sites\/all\/themes\/mco\/sass\/styles\.scss}line{font-family:\00003227}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/martinowen\/Sites\/mcocreative4\/master\/sites\/all\/themes\/mco\/sass\/styles\.scss}line{font-family:\00003232}}
   .region-sidebar-second .print-design a {
-    width: 14.58333%;
+    max-width: 14.58333%;
+    height: auto;
     position: absolute;
     left: 78.85417vw;
-    top: 42.5vh;
+    top: 55.14286vh;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/martinowen\/Sites\/mcocreative4\/master\/sites\/all\/themes\/mco\/sass\/styles\.scss}line{font-family:\00003244}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/martinowen\/Sites\/mcocreative4\/master\/sites\/all\/themes\/mco\/sass\/styles\.scss}line{font-family:\00003250}}
   .region-sidebar-second .contact-us a {
-    width: 14.58333%;
+    max-width: 14.58333%;
+    height: auto;
     position: absolute;
     left: 62.5vw;
-    top: 62.65714vh;
+    top: 78.85714vh;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/martinowen\/Sites\/mcocreative4\/master\/sites\/all\/themes\/mco\/sass\/styles\.scss}line{font-family:\00003266}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/martinowen\/Sites\/mcocreative4\/master\/sites\/all\/themes\/mco\/sass\/styles\.scss}line{font-family:\00003273}}
   .page-node-44 .website-design,
   .page-node-45 .website-development,
   .page-node-46 .online-marketing
@@ -1870,7 +1882,7 @@ tr.selected td {
     height: 28.57143%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/martinowen\/Sites\/mcocreative4\/master\/sites\/all\/themes\/mco\/sass\/styles\.scss}line{font-family:\00003272}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/martinowen\/Sites\/mcocreative4\/master\/sites\/all\/themes\/mco\/sass\/styles\.scss}line{font-family:\00003279}}
   .page-node-44 .website-design a {
     width: 20.83333%;
     height: 28.57143%;
@@ -1880,7 +1892,7 @@ tr.selected td {
     left: 10.52083%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/martinowen\/Sites\/mcocreative4\/master\/sites\/all\/themes\/mco\/sass\/styles\.scss}line{font-family:\00003281}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/martinowen\/Sites\/mcocreative4\/master\/sites\/all\/themes\/mco\/sass\/styles\.scss}line{font-family:\00003288}}
   .page-node-45 .website-development a {
     width: 20.83333%;
     height: 28.57143%;
@@ -1890,7 +1902,7 @@ tr.selected td {
     left: 31.25%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/martinowen\/Sites\/mcocreative4\/master\/sites\/all\/themes\/mco\/sass\/styles\.scss}line{font-family:\00003290}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/martinowen\/Sites\/mcocreative4\/master\/sites\/all\/themes\/mco\/sass\/styles\.scss}line{font-family:\00003297}}
   .page-node-46 .online-marketing a {
     width: 20.83333%;
     height: 28.57143%;
@@ -1899,7 +1911,7 @@ tr.selected td {
     left: 3.95833%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/martinowen\/Sites\/mcocreative4\/master\/sites\/all\/themes\/mco\/sass\/styles\.scss}line{font-family:\00003298}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/martinowen\/Sites\/mcocreative4\/master\/sites\/all\/themes\/mco\/sass\/styles\.scss}line{font-family:\00003305}}
   .page-node-47 .print-design a {
     width: 20.83333%;
     height: 28.57143%;
@@ -1908,7 +1920,7 @@ tr.selected td {
     left: 37.1875%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/martinowen\/Sites\/mcocreative4\/master\/sites\/all\/themes\/mco\/sass\/styles\.scss}line{font-family:\00003306}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/martinowen\/Sites\/mcocreative4\/master\/sites\/all\/themes\/mco\/sass\/styles\.scss}line{font-family:\00003313}}
   .page-node-5 .contact-us {
     display: block;
     width: 20.83333%;
@@ -1919,25 +1931,25 @@ tr.selected td {
   }
 
   /* Website design */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/martinowen\/Sites\/mcocreative4\/master\/sites\/all\/themes\/mco\/sass\/styles\.scss}line{font-family:\00003317}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/martinowen\/Sites\/mcocreative4\/master\/sites\/all\/themes\/mco\/sass\/styles\.scss}line{font-family:\00003324}}
   .page-node-44 #zone-content {
     height: 42.85714%;
   }
 
   /* Website development */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/martinowen\/Sites\/mcocreative4\/master\/sites\/all\/themes\/mco\/sass\/styles\.scss}line{font-family:\00003322}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/martinowen\/Sites\/mcocreative4\/master\/sites\/all\/themes\/mco\/sass\/styles\.scss}line{font-family:\00003329}}
   .page-node-45 #zone-content {
     height: 3percentage 0.42857;
   }
 
   /* Online marketing */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/martinowen\/Sites\/mcocreative4\/master\/sites\/all\/themes\/mco\/sass\/styles\.scss}line{font-family:\00003328}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/martinowen\/Sites\/mcocreative4\/master\/sites\/all\/themes\/mco\/sass\/styles\.scss}line{font-family:\00003335}}
   .page-node-46 #zone-content {
     height: 42.85714%;
   }
 
   /* Print design */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/martinowen\/Sites\/mcocreative4\/master\/sites\/all\/themes\/mco\/sass\/styles\.scss}line{font-family:\00003334}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/martinowen\/Sites\/mcocreative4\/master\/sites\/all\/themes\/mco\/sass\/styles\.scss}line{font-family:\00003341}}
   .page-node-47 #zone-content {
     height: 42.85714%;
   }
